@@ -2,19 +2,21 @@ package com.example.form;
 
 public class UserForm {
 	private String name;
-	private Integer age;
+	private String age;
 	private String comment;
-	
 	public String getName() {
 		return name;
 	}
 	public void setName(String name) {
 		this.name = name;
 	}
-	public Integer getAge() {
+	public String getAge() {
 		return age;
 	}
-	public void setAge(Integer age) {
+	public Integer getIntAge() {
+		return Integer.parseInt(age);
+	}	
+	public void setAge(String age) {
 		this.age = age;
 	}
 	public String getComment() {
@@ -27,4 +29,5 @@ public class UserForm {
 	public String toString() {
 		return "UserForm [name=" + name + ", age=" + age + ", comment=" + comment + "]";
 	}
+
 }
