@@ -29,7 +29,7 @@ public class Exam02Controller {
 	
 	@RequestMapping("/result2")
 	public String result2() {
-		return "exam2/exam-02-result";
+		return "exam2/exam02-result2";
 	}
 	
 }
