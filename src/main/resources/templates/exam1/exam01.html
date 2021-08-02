@@ -5,10 +5,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="exam01-result.html" th:action="@{/exam01]">
+	<form th:action="@{/exam01/result}">
 		<div>
 		<label for="name">名前:</label>
 		<input id="name" type="text" name="name">
+		</div>
+		<div>
+		<button>送信</button>
 		</div>
 	</form>
 </body>

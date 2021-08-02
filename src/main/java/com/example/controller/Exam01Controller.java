@@ -10,12 +10,12 @@ public class Exam01Controller {
 
 	@RequestMapping("")
 	public String index() {
-		return "exam01";
+		return "exam1/exam01";
 	}
 	
 	@RequestMapping("/result")
 	public String getResult(String name,Model model) {
 		model.addAttribute("name", name);
-		return "exam01-result";
+		return "exam1/exam01-result";
 	}
 }
