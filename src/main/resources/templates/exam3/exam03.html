@@ -5,6 +5,22 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	<form th:action="@{/exam03/calc-total-price}" method="POST">
+		<div class="product1">
+			<label for="product1">商品1</label>
+			<input type="text" id="product1" name="price1">円
+		</div>
+		<div class="product2">
+			<label for="product2">商品2</label>
+			<input type="text" id="product2" name="price2">円
+		</div>
+		<div class="product3">
+			<label for="product3">商品3</label>
+			<input type="text" id="product3" name="price3">円
+		</div>
+		<div>
+			<button type="submit">購入</button>
+		</div>
+	</form>
 </body>
 </html>
