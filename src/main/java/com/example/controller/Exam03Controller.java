@@ -20,7 +20,7 @@ public class Exam03Controller {
 	
 	@RequestMapping("/calc-total-price")
 	public String calcTotalPrice(Integer price1,Integer price2,Integer price3) {
-		int subTotalPrice = price1 + price2 + price2;
+		int subTotalPrice = price1 + price2 + price3;
 		int tax = (int)(subTotalPrice * 0.1);
 		int totalPrice = subTotalPrice + tax;
 		application.setAttribute("subTotalPrice", subTotalPrice);
