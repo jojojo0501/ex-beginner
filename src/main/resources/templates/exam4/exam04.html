@@ -6,7 +6,7 @@
 </head>
 <body>
 	<h3>ユーザー登録</h3>
-	<form th:action="@{/exam01/result}" method="POST" th:object="${userForm}">
+	<form th:action="@{/exam04/user-registration}" method="POST" th:object="${userForm}">
 		<div>
 			<label for="name">名前:</label>
 			<input id="name" type="text" name="name" th:field="*{name}">
@@ -20,7 +20,7 @@
 			<textarea id="comment" name="comment" cols="35" rows="10" th:field="*{comment}"></textarea>
 		</div>
 		<div>
-			<button type="submit">送信</button>
+			<button type="submit">登録</button>
 		</div>
 	</form>
 </body>

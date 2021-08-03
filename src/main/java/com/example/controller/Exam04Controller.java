@@ -28,6 +28,7 @@ public class Exam04Controller {
 		user.setName(userForm.getName());
 		user.setAge(userForm.getIntAge());
 		user.setComment(userForm.getComment());
+		System.out.println(user);
 		redirectAttributes.addFlashAttribute("user", user);
 		return "redirect:/exam04/toresult";
 	}
