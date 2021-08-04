@@ -15,7 +15,7 @@ import com.example.repository.MemberRepository;
 @Controller
 @Transactional
 @RequestMapping("/exam05")
-public class Ex05Controller {
+public class Exam05Controller {
 
 	@Autowired
 	private MemberRepository repository;

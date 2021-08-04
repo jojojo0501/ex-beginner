@@ -6,7 +6,7 @@
 </head>
 <body>
 	<h3>検索結果</h3>
-	<div th:each="member:$(memberList)">
+	<div th:each="member:${memberList}">
 		<span th:text="${member.name}"></span>
 	</div>
 </body>
